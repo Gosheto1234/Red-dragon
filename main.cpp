@@ -42,7 +42,7 @@ cout << "\n" << "ip: " << devices_ip << "\r";// \r = go back to the beginning of
 
 if(all_info.find("MAC Address") < 200)
 {
-mac_and_device = all_info.substr(12, 40);
+mac_and_device = all_info.substr(12, 50);
 
 cout <<  "device: " << mac_and_device << "\r\n";
 }
