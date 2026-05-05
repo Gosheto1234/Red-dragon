@@ -11,7 +11,7 @@ void nmap(string nmap_address)
 char buffer[700];//TODO fix values ?
 string devices_ip;
 
-//string devices_ip_stop = devices_ip.substr("n\" , 17)
+//string devices_ip_stop = devices_ip.substr("n" , 17)
 
 string all_info;
 
@@ -34,15 +34,9 @@ continue;
 
 if(all_info.find("for") < 200)
 {
-devices_ip = all_info.substr(21, 17);
-if(devices_ip.find("\n"))
-{
-//devices_ip.erase("\n");
-//cout << console.get("IMA PRAZNO PROSTRANSTVO", { console.red} );
+devices_ip = all_info.substr(21, 18);
 
-}
-
-cout <<  "ip: " << devices_ip << endl;
+cout << "\n" << "ip: " << devices_ip << "\r";// \r = go back to the beginning of the line
 }
 
 
@@ -50,20 +44,20 @@ if(all_info.find("MAC Address") < 200)
 {
 mac_and_device = all_info.substr(12, 40);
 
-cout << "device: " << mac_and_device;
+cout <<  "device: " << mac_and_device << "\r\n";
 }
 
 }
-/*
+/
 if(all_info.find("Starting Nmap") < 1000)
 {
 
 //string labe = all_info.substr(67);
 continue;
 }
-*/
+/
 
-/*
+/
 if(all_info.find("for") < 200)
 {
 devices_ip = all_info.substr(2, 6);
@@ -71,7 +65,7 @@ devices_ip = all_info.substr(2, 6);
 cout << "ips: " << devices_ip;
 }
 
-*/
+/
 
 
 }
@@ -79,7 +73,7 @@ cout << "ips: " << devices_ip;
 string get_ip()
 {
 string ip_device;
-char buffer[100];//TODO fix values ? 
+char buffer[100];//TODO fix values ?
 FILE *ip = popen("sudo ip add show wlan0 | grep inet", "r");
 while(fgets(buffer, sizeof(buffer), ip))
 {
@@ -105,14 +99,14 @@ int  main()
 
 
 
-// To get the formatted string 
+// To get the formatted string
     //cout << console.get("Hello World!", { console.red} ) << endl;
 
     system("clear");
     system("termimage 1000014964-removebg-preview.png");
 
      string address = get_ip();
-      nmap(address);   
+      nmap(address);
     return 0;
 
 }
