@@ -1,7 +1,0 @@
-# Nmap 7.99 scan initiated Wed Apr 29 10:53:13 2026 as: nmap -f -sn -oN tets 192.168.13.154/24
-Nmap scan report for 192.168.13.1
-Host is up (0.085s latency).
-MAC Address: AC:84:C6:CE:5D:D2 (TP-Link Technologies)
-Nmap scan report for 192.168.13.154
-Host is up.
-# Nmap done at Wed Apr 29 10:53:17 2026 -- 256 IP addresses (2 hosts up) scanned in 4.43 seconds
