@@ -85,7 +85,7 @@ ip_device += buffer;
 //If the position is less than 1000, it means it found it
 if(ip_device.find("inet") < 1000)
 {
-//cout << "ip: " << ip_device.substr(8,18);//string.substr takes one or two numbers , here 8 is from where it starts to get text , 18 where it ends . i>
+//cout << "ip: " << ip_device.substr(8,18);//string.substr takes one or two numbers , here 8 is from where it starts to get text , 18 where it ends . if the number is one it reads the whole line starting from that number
 ip_device = ip_device.substr(8, 18);
 }
 pclose(ip);
