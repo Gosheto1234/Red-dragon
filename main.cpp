@@ -103,7 +103,7 @@ int  main()
     //cout << console.get("Hello World!", { console.red} ) << endl;
 
     system("clear");
-    system("termimage 1000014964-removebg-preview.png");
+    system("red_dragon.png");
 
      string address = get_ip();
       nmap(address);
