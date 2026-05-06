@@ -35,7 +35,7 @@ continue;
 
 if(all_info.find("for") < 200)
 {
-devices_ip = all_info.substr(21, 18);
+devices_ip = all_info.substr(20, 18);
 
 cout << "\n" << "ip:" << devices_ip << "\r";// \r = go back to the beginning of the line
 }
