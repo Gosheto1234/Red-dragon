@@ -8,7 +8,7 @@ using namespace std;
 void nmap(string nmap_address)
 {
 
-char buffer[700];//TODO fix values ?
+char buffer[700];
 string devices_ip;
 
 
@@ -56,7 +56,7 @@ cout <<  "device:" << mac_and_device << "\r\n";
 string get_ip()
 {
 string ip_device;
-char buffer[100];//TODO fix values ?
+char buffer[100];
 FILE *ip = popen("sudo ip add show wlan0 | grep inet", "r");
 while(fgets(buffer, sizeof(buffer), ip))
 {
