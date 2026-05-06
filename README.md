@@ -27,7 +27,7 @@ g++ main.cpp -o red-dragon
 ### 3. Run
 Execute the tool with root privileges to allow for full device discovery:
 ```bash
-tsu -c ./red-dragon
+./red-dragon
 ```
 
 > [!CAUTION]
