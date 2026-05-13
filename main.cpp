@@ -62,15 +62,7 @@ while(fgets(buffer, sizeof(buffer), ip))
 {
 ip_device += buffer;
 
-//cout << buffer;
-/*
-if(ip_device.find("inet") < 1000)
-{
-//string.substr takes one or two numbers , here 8 is from where it st>
-ip_device = ip_device.substr(8, 18);
-cout << "\n" << ip_device << "\r\n";
-}
-*/
+
 }
 
 
